@@ -2,6 +2,8 @@ plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.kotlin.android)
     id("com.google.devtools.ksp") version "2.0.21-1.0.27"
+    id("org.jetbrains.kotlin.plugin.compose") version "2.0.0"
+
 }
 
 android {
@@ -43,6 +45,12 @@ android {
 }
 
 dependencies {
+    // Compose
+    implementation(libs.androidx.runtime)
+    implementation(libs.androidx.ui)
+    implementation(libs.androidx.foundation)
+    implementation(libs.androidx.material)
+
     // AndroidX Core and UI
     implementation(libs.androidx.core.ktx.v1120)
     implementation(libs.androidx.appcompat.v161)
