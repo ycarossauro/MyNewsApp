@@ -21,7 +21,7 @@ class BreakingNewsFragment : Fragment(R.layout.fragment_breaking_news) {
     private lateinit var viewModel: NewsViewModel
     private lateinit var newsAdapter: NewsAdapter
     private val progressBar: ProgressBar? = view?.findViewById(R.id.paginationProgressBar)
-    private val TAG = "BreakingNewsFragment"
+    private val tag = "BreakingNewsFragment"
 
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
@@ -51,7 +51,7 @@ class BreakingNewsFragment : Fragment(R.layout.fragment_breaking_news) {
                 is Resource.Error -> {
                     hideProgressBar()
                     response.message?.let { message ->
-                        Log.e(TAG, "An error ocured: $message")
+                        Log.e(tag, "An error ocured: $message")
                     }
                 }
 
