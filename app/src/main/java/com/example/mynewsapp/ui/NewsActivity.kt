@@ -2,6 +2,7 @@ package com.example.mynewsapp.ui
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
+import androidx.core.content.ContextCompat
 import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.fragment.NavHostFragment
 import androidx.navigation.ui.setupWithNavController
@@ -19,6 +20,7 @@ class NewsActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_news)
+        window.statusBarColor = ContextCompat.getColor(this, R.color.light_blue)
 
         val newsRepository = NewsRepository(ArticleDataBase(this))
         val viewModelProvideFactory = NewsViewModelProvideFactory(newsRepository)

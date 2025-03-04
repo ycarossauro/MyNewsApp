@@ -1,4 +1,4 @@
-package com.example.mynewsapp.adapters.util
+package com.example.mynewsapp.util
 
 /**
  *  handle different states of data when making API calls
