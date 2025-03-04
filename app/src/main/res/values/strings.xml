@@ -1,3 +1,13 @@
 <resources>
     <string name="app_name">MyNewsApp</string>
+    <string name="breaking_news_title">Breaking News</string>
+    <string name="saved_news_title">Saved News</string>
+    <string name="searching_news_title">Searching News</string>
+    <string name="my_news_app_title">My News App</string>
+    <string name="search_subtitle">Search</string>
+    <string name="source">SOURCE</string>
+    <string name="title">TITLE</string>
+    <string name="description">DESCRIPTION</string>
+    <string name="published_at">PUBLISHED AT</string>
+    <string name="an_image">an image</string>
 </resources>
